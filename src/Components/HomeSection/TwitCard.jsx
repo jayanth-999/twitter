@@ -98,7 +98,7 @@ const TwitCard = () => {
 
                     <div className='mt-2'>
                         <div className='cursor-pointer'>
-                            <p className="mb-2 p-0 text-start">this is tweet msg.....</p>
+                            <p className="mb-2 p-0 ">this is tweet msg.....</p>
                             <img
                                 className="w-[28rem] border border-gray-400 p-5 rounded-md"
                                 src="https://imgs.search.brave.com/GvRbDrH8E1Dtruwi9fCZr1UYrQ8zU7RyrOsDYHJj0iM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/aG9sbHl3b29kcmVw/b3J0ZXIuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIzLzA0/L0lNRy1BY2FkZW15/LVN0YWRpdW0uanBn/P3c9MTI5NiZoPTcz/MCZjcm9wPTE"
