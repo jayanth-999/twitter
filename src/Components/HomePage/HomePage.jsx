@@ -3,6 +3,9 @@ import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import HomeSection from '../HomeSection/HomeSection'
 import RightSide from '../RightSide/RightSide'
+import { Route, Routes } from 'react-router-dom'
+import Profile from '../Profile/Profile'
+import TwitDetail from '../TwitDetail/TwitDetail'
 
 export default function HomePage() {
   return (
@@ -11,7 +14,12 @@ export default function HomePage() {
             <div className='text-center'><Navigation/></div>
         </Grid>
         <Grid item xs={12} lg={6} className='px-5 lg:px-8 border hidden lg:block w-full relative'>
-            <div className=''><HomeSection/></div>
+            <Routes>
+              <Route className='' path='/' element={<HomeSection/>}></Route>
+              <Route className='' path='/home' element={<HomeSection/>}></Route>
+              <Route path='/profile/:id' element={<Profile/>}></Route>
+              <Route className='' path='/twit/:id' element={<TwitDetail/>}></Route>
+            </Routes>
         </Grid>
         <Grid item xs={12} lg={3} className='hidden lg:block w-full relative'>
             <div className=''><RightSide/></div>
