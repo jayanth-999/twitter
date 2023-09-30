@@ -8,16 +8,21 @@ import RepeatIcon from "@mui/icons-material/Repeat";
 import FileUploadIcon from "@mui/icons-material/FileUpload";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import ReplyModal from './ReplyModel';
 
 
 
 const TwitCard = () => {
     const navigate = useNavigate();
+    const [openReplyModel, setOpenReplyModel] = useState();
     // const dispatch = useDispatch();
     const [isLiked, setIsLiked] = useState(false);
     const [likes, setLikes] = useState(1);
     const [anchorEl, setAnchorEl] = React.useState(null);
     const openDeleteMenu = Boolean(anchorEl);
+    const handleCloseReplyModel = () => setOpenReplyModel(false);
+
+  const handleOpenReplyModel = () => setOpenReplyModel(true);
     const handleOpenDeleteMenu = (event) => {
         setAnchorEl(event.currentTarget);
     };
@@ -29,9 +34,9 @@ const TwitCard = () => {
         console.log('Delete twit');
     };
 
-    const handleOpenReplyModel = () => {
-        console.log('Open reply model');
-    };
+    // const handleOpenReplyModel = () => {
+    //     console.log('Open reply model');
+    // };
 
     const handleCreateRetweet = () => {
         console.log('Retweet created');
@@ -97,7 +102,7 @@ const TwitCard = () => {
                     </div>
 
                     <div className='mt-2'>
-                        <div onClick={()=>navigate(`/twit/${2}`)} className='cursor-pointer'>
+                        <div onClick={() => navigate(`/twit/${2}`)} className='cursor-pointer'>
                             <p className="mb-2 p-0 ">this is tweet msg.....</p>
                             <img
                                 className="w-[28rem] border border-gray-400 p-5 rounded-md"
@@ -109,7 +114,7 @@ const TwitCard = () => {
                             <div className="space-x-3 flex items-center text-gray-600">
                                 <ChatBubbleOutlineIcon
                                     className="cursor-pointer"
-                                  onClick={handleOpenReplyModel}
+                                    onClick={handleOpenReplyModel}
                                 />
                                 {1 > 0 && <p>{1}</p>}
                             </div>
@@ -145,6 +150,13 @@ const TwitCard = () => {
                     </div>
                 </div>
             </div>
+            <section>
+                <ReplyModal
+                    // twitData={twit}
+                    open={openReplyModel}
+                    handleClose={handleCloseReplyModel}
+                />
+            </section>
         </div>
     )
 }

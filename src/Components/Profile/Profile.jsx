@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { useNavigate } from 'react-router-dom';
 import { Avatar, Box, Button } from "@mui/material";
@@ -10,15 +10,18 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import TwitCard from '../HomeSection/TwitCard';
+import ProfileModel from './ProfileModel';
 
 
 function Profile() {
   const [tabValue, setTabValue] = React.useState("1");
+  const [openProfileModel, setOpenProfileModel] = useState(false);
+  const handleCloseProfileModel = () => setOpenProfileModel(false);
+  const handleOpenProfileModel = () => setOpenProfileModel(true);
+
 
   const Navigate = useNavigate();
-  const handleBack = () => {
-    Navigate(-1);
-  };
+  const handleBack = () => Navigate(-1);
 
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);
@@ -29,13 +32,15 @@ function Profile() {
     }
   };
 
-  const handleOpenProfileModel = () => {
-    console.log("Open profile model");
-  };
+  // const handleOpenProfileModel = () => {
+  //   console.log("Open profile model");
+  // };
 
   const handleFollowUser = () => {
     console.log("Follow user button clicked");
   };
+
+  
 
   return (
     <div>
@@ -146,6 +151,12 @@ function Profile() {
             </TabPanel>
           </TabContext>
         </Box>
+      </section>
+      <section>
+        <ProfileModel
+          handleClose={handleCloseProfileModel}
+          open={openProfileModel}
+        />
       </section>
     </div>
   )

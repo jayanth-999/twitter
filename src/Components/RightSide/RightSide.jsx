@@ -3,6 +3,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import { Button } from '@mui/material';
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import SubscriptionModel from '../SubscriptionModel/SubscriptionModel';
 
 function RightSide() {
     const [theme, setTheme] = useState('light')
@@ -11,6 +12,11 @@ function RightSide() {
         setTheme('dark')
         console.log(theme)
     }
+
+    const [openSubscriptionModal, setOpenSubscriptionModal] = useState(false);
+    const handleCloseSubscriptionMadal = () => setOpenSubscriptionModal(false);
+    const handleOpenSubscriptionModal = () => setOpenSubscriptionModal(true);
+
 
     return (
         <div className='py-5 sticky top-0 overflow-y-hidden'>
@@ -36,7 +42,7 @@ function RightSide() {
                     <h1 className='text-xl font-bold'>Get Verification</h1>
                     <h1 className='my-2 font-bold'>Subscribe to unlock new features</h1>
                     <Button
-                        // onClick={handleOpenSubscriptionModal}
+                        onClick={handleOpenSubscriptionModal}
                         variant="contained"
                         sx={{ padding: "10px", paddingX: "20px", borderRadius: "25px", bgcolor: "#1d9bf0" }}
                     >
@@ -83,6 +89,10 @@ function RightSide() {
                     </div>
                 </section>
             </div>
+            <SubscriptionModel
+                open={openSubscriptionModal}
+                handleClose={handleCloseSubscriptionMadal}
+            />
         </div>
     )
 }
