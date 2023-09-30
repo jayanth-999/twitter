@@ -52,7 +52,7 @@ const TwitCard = () => {
         <div>
             <div className='flex space-x-5' >
                 <Avatar
-                    onClick={() => navigate(`/profile/{2}`)}
+                    onClick={() => navigate(`/twitter/profile/{2}`)}
                     src='https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_960_720.png'
                     alt='userImg'
                     className="flex cursor-pointer items-center space-x-2"
@@ -60,7 +60,7 @@ const TwitCard = () => {
                 <div className='w-full'>
                     <div className='flex justify-between items-center'>
                         <div
-                            onClick={() => navigate(`/profile/{2}`)}
+                            onClick={() => navigate(`/twitter/profile/{2}`)}
                             className="flex cursor-pointer items-center space-x-2"
                         >
                             <span className="font-semibold">Nuggu Jayanth</span>
@@ -96,13 +96,13 @@ const TwitCard = () => {
                                 }}
                             >
                                 {true && <MenuItem onClick={handleDeleteTwit}>Delete</MenuItem>}
-                                <MenuItem onClick={() => navigate(`/twit/{2}`)}>Details</MenuItem>
+                                <MenuItem onClick={() => navigate(`/twitter/twit/{2}`)}>Details</MenuItem>
                             </Menu>
                         </div>
                     </div>
 
                     <div className='mt-2'>
-                        <div onClick={() => navigate(`/twit/${2}`)} className='cursor-pointer'>
+                        <div onClick={() => navigate(`/twitter/twit/${2}`)} className='cursor-pointer'>
                             <p className="mb-2 p-0 ">this is tweet msg.....</p>
                             <img
                                 className="w-[28rem] border border-gray-400 p-5 rounded-md"

@@ -38,7 +38,7 @@ const Navigation = () => {
         </div>
         <div className="space-y-5">
           {navigationMenu.map((item) => (
-            <div key={item.title} onClick={() => item.title === "Profile" ? navigate(`/profile/${5}`) : navigate(`/${item.title.toLowerCase()}`)} className="cursor-pointer flex space-x-3 items-center">
+            <div key={item.title} onClick={() => item.title === "Profile" ? navigate(`/twitter/profile/${5}`) : navigate(`/twitter/${item.title.toLowerCase()}`)} className="cursor-pointer flex space-x-3 items-center">
               {item.icon}
               <span className="text-xl">{item.title}</span>
             </div>
