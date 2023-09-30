@@ -15,10 +15,10 @@ export default function HomePage() {
         </Grid>
         <Grid item xs={12} lg={6} className='px-5 lg:px-8 border hidden lg:block w-full relative'>
             <Routes>
-              <Route className='' path='/' element={<HomeSection/>}></Route>
-              <Route className='' path='/home' element={<HomeSection/>}></Route>
-              <Route path='/profile/:id' element={<Profile/>}></Route>
-              <Route className='' path='/twit/:id' element={<TwitDetail/>}></Route>
+              <Route className='' path='/twitter/' element={<HomeSection/>}></Route>
+              <Route className='' path='/twitter/home' element={<HomeSection/>}></Route>
+              <Route path='/twitter/profile/:id' element={<Profile/>}></Route>
+              <Route className='' path='/twitter/twit/:id' element={<TwitDetail/>}></Route>
             </Routes>
         </Grid>
         <Grid item xs={12} lg={3} className='hidden lg:block w-full relative'>
