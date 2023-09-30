@@ -5,7 +5,7 @@
  <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Project Title</h3>
+<h3 align="center">Twitter</h3>
 
 <div align="center">
 
@@ -18,7 +18,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center">twitter clone with react
     <br> 
 </p>
 
@@ -34,13 +34,19 @@
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
-Write about 1-2 paragraphs describing the purpose of your project.
+created twitter clone with react modules and mui and tailwind css framework and used react routers
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+make a github clone the project
+run 
+```npm install``` to install node packges
+
+run ```npm start``` to run the project
+
+
 
 ### Prerequisites
-What things you need to install the software and how to install them.
+need to install node packages
 
 ```
 Give examples
@@ -87,15 +93,15 @@ Add notes about how to use the system.
 Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [REACT](https://react.dev/) - REACT Framework
+- [Mui](https://mui.com/material-ui/) - MUi css framework
+- [Tailwind](https://tailwind) - CSS Framework
+- [React Router](https://react.dev/) - For routing
 
 ## ✍️ Authors <a name = "authors"></a>
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [jayanth](https://github.com/jayanth-999) - Idea & Initial work
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/jayanth-999/The-Documentation-Compendium/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 - Hat tip to anyone whose code was used
