@@ -107,3 +107,10 @@ See also the list of [contributors](https://github.com/jayanth-999/The-Documenta
 - Hat tip to anyone whose code was used
 - Inspiration
 - References
+
+## Images
+
+<img width="960" alt="image" src="https://github.com/jayanth-999/twitter/assets/67133310/73c40f15-3d3e-4691-9943-44b50f88f645">
+<img width="960" alt="image" src="https://github.com/jayanth-999/twitter/assets/67133310/c032aa93-c072-4443-834e-033cb1303ca8">
+<img width="960" alt="image" src="https://github.com/jayanth-999/twitter/assets/67133310/826e0f39-f4a1-4702-8bdd-be1016b9e5ab">
+<img width="960" alt="image" src="https://github.com/jayanth-999/twitter/assets/67133310/69d42e29-d28e-4bd3-a199-acc0f0e38838">
