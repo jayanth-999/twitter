@@ -12,47 +12,47 @@ export const navigationMenu = [
     {
         title: "Home",
         icon: <HomeIcon />,
-        path: "/home"
+        path: "/twitter/home"
     },
     {
         title: "Explore",
         icon: <ExploreIcon />,
-        path: "/explore"
+        path: "/twitter/explore"
     },
     {
         title: "Notifications",
         icon: <NotificationsIcon />,
-        path: "/notifications"
+        path: "/twitter/notifications"
     },
     {
         title: "Messages",
         icon: <MessageIcon />,
-        path: "/messages"
+        path: "/twitter/messages"
     },
     {
         title: "Lists",
         icon: <ListAltIcon />,
-        path: "/lists"
+        path: "/twitter/lists"
     },
     {
         title: "Communities",
         icon: <GroupIcon />,
-        path: "/communities"
+        path: "/twitter/communities"
     },
     {
         title: "Verified",
         icon: <VerifiedIcon />,
-        path: "/verified"
+        path: "/twitter/verified"
     },
     {
         title: "Profile",
         icon: <AccountCircleIcon />,
-        path: "/profile"
+        path: "/twitter/profile"
 
     },
     {
         title: "More",
         icon: <PendingIcon />,
-        path: "/more"
+        path: "/twitter/more"
     },
 ]
